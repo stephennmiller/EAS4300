@@ -1,6 +1,6 @@
 # EAS4300 – HW7 Q2: Turbojet with Afterburner Analysis
 
-This repository contains the MATLAB code and outputs for extending the turbojet performance analysis from [HW7_Q1.m](HW7_Q1/HW7_Q1.m) by adding an afterburner stage. In this problem, an afterburner is incorporated with a maximum stagnation temperature of $T_{06,ab} = 2000$ K, an afterburner combustion efficiency of $\eta_{ab} = 0.95$, and a pressure ratio of $r_{ab} = 0.97$. All other efficiencies remain unchanged from the base model.
+This repository contains the MATLAB code and outputs for extending the turbojet performance analysis from [HW7_Q1.m](Homework%207/HW7_Q1/HW7_Q1.m) by adding an afterburner stage. In this problem, an afterburner is incorporated with a maximum stagnation temperature of $T_{06,ab} = 2000$ K, an afterburner combustion efficiency of $\eta_{ab} = 0.95$, and a pressure ratio of $r_{ab} = 0.97$. All other efficiencies remain unchanged from the base model.
 
 The script computes key performance parameters for both non-afterburner and afterburner cases, including:
 - **Specific Thrust** ($I$)
