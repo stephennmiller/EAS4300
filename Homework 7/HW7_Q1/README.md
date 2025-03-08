@@ -9,6 +9,7 @@ This repository contains code and outputs for analyzing a **non-afterburning tur
 
 and plots them against the **compressor pressure ratio** $r_c$.
 
+```mermaid
 flowchart TD
     A[Inlet] --> B[Compressor]
     B --> C[Combustor]
@@ -23,7 +24,7 @@ flowchart TD
     end
     G -.-> C
 
-
+```
 ---
 
 ## Files
