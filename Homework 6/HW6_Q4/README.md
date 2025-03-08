@@ -15,7 +15,7 @@ A ramjet is to propel an aircraft at Mach 3 at high altitude where the ambient p
 Assume all components of the engine are ideal—that is, frictionless—determine the above efficiencies. The specific heat ratio by \(\gamma = 1.4\) and make the approximations appropriate to \(f \ll 1\).
 
 ### Problem 4
-(15 points) Conduct a sensitivity study of the performance of the ramjet engine with respect to combustion efficiency \(\eta_b\) and the exhaust nozzle total pressure ratio \(\pi_n\). Using the conditions and properties listed for problem 12 as a starting point and jet fuel used has a heat of combustion of 43,000 kJ/kg, and a stoichiometric fuel to air ratio of 0.06, construct plots of
+(15 points) Conduct a sensitivity study of the performance of the ramjet engine with respect to combustion efficiency (\(\eta_b\)) and the exhaust nozzle total pressure ratio (\(\pi_n\)). Using the conditions and properties listed for problem 12 as a starting point and jet fuel used has a heat of combustion of 43,000 kJ/kg, and a stoichiometric fuel-to-air ratio of 0.06, construct plots of
 
 \[
 \frac{d(I)}{d\eta_b}, \quad \frac{d(I)}{d\pi_n}, \quad \frac{d(\text{TSFC})}{d\eta_b}, \quad \frac{d(\text{TSFC})}{d\pi_n},
@@ -34,7 +34,7 @@ Use baseline \(\eta_b\) and \(\pi_n\) values of one, and use delta values of 0.0
 3. \(\frac{1}{\text{TSFC}} \frac{d(\text{TSFC})}{d\eta_b}\) vs. \(M_{\text{flight}}\)
 4. \(\frac{1}{\text{TSFC}} \frac{d(\text{TSFC})}{d\pi_n}\) vs. \(M_{\text{flight}}\)
 
-(15 points) Conduct a sensitivity study with respect to the performance of the ramjet engine with respect to combustion efficiency \(\eta_b\) and the exhaust nozzle total pressure ratio \(\pi_n\).
+(15 points) Conduct a sensitivity study with respect to the performance of the ramjet engine with respect to combustion efficiency (\(\eta_b\)) and the exhaust nozzle total pressure ratio (\(\pi_n\)).
 
 ## Files
 
