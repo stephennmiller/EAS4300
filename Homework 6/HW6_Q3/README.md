@@ -1,7 +1,7 @@
 # EAS 4300 Homework 6 - Question 3
 
 ## Overview
-This script (`q3.m`) solves HW6 Question 3, analyzing the performance of a ramjet engine at an altitude of 10,000 meters over a flight Mach number range from 1 to 6. The analysis includes key performance parameters such as specific thrust, thrust specific fuel consumption (TSFC), combustor exit temperature, area ratio, efficiencies, and fuel-to-air ratio. The results are computed for 1000 evenly spaced Mach numbers (`delta = 1000`) to provide smooth plots and detailed data.
+This script (`HW6_Q3.m`) solves HW6 Question 3, analyzing the performance of a ramjet engine at an altitude of 10,000 meters over a flight Mach number range from 1 to 6. The analysis includes key performance parameters such as specific thrust, thrust specific fuel consumption (TSFC), combustor exit temperature, area ratio, efficiencies, and fuel-to-air ratio. The results are computed for 1000 evenly spaced Mach numbers (`delta = 1000`) to provide smooth plots and detailed data.
 
 ### Problem Description
 The ramjet operates at 10,000 meters with the following conditions:
