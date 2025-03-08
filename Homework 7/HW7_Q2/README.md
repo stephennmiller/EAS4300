@@ -29,7 +29,7 @@ These are plotted as functions of the compressor pressure ratio $r_c$.
    - **Page 3:** Efficiencies ($\eta_{th}$, $\eta_{p}$, $\eta_{0}$) vs. $r_c$
    - **Page 4:** Nozzle Area Ratio vs. $r_c$
 
-4. [**HW7_Q1.m**](HW7_Q1.m)  
+4. [**HW7_Q1.m**][HW7_Q1.m](../HW7_Q1/HW7_Q1.m)
    The MATLAB script for the base turbojet analysis without an afterburner. This file is referenced here as the starting point for HW7_Q2.
 
 ---
