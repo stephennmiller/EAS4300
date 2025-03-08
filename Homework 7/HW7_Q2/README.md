@@ -1,6 +1,6 @@
 # EAS4300 – HW7 Q2: Turbojet with Afterburner Analysis
 
-This repository contains the MATLAB code and outputs for extending the turbojet performance analysis from [HW7_Q1.m](Homework%207/HW7_Q1/HW7_Q1.m) by adding an afterburner stage. In this problem, an afterburner is incorporated with a maximum stagnation temperature of $T_{06,ab} = 2000$ K, an afterburner combustion efficiency of $\eta_{ab} = 0.95$, and a pressure ratio of $r_{ab} = 0.97$. All other efficiencies remain unchanged from the base model.
+This repository contains the MATLAB code and outputs for extending the turbojet performance analysis from [HW7_Q1.m](../HW7_Q1/HW7_Q1.m) by adding an afterburner stage. In this problem, an afterburner is incorporated with a maximum stagnation temperature of $T_{06,ab} = 2000$ K, an afterburner combustion efficiency of $\eta_{ab} = 0.95$, and a pressure ratio of $r_{ab} = 0.97$. All other efficiencies remain unchanged from the base model.
 
 The script computes key performance parameters for both non-afterburner and afterburner cases, including:
 - **Specific Thrust** ($I$)
@@ -46,7 +46,7 @@ These are plotted as functions of the compressor pressure ratio $r_c$.
 ## Notes
 
 - The analysis ensures that the overall fuel-to-air ratio satisfies $f_b + f_{ab} \le f_{st}$.
-- The afterburner stage adds additional fuel to raise the stagnation temperature after the turbine, modifying the performance curves relative to the base case in [HW7_Q1.m](HW7_Q1.m).
+- The afterburner stage adds additional fuel to raise the stagnation temperature after the turbine, modifying the performance curves relative to the base case in [HW7_Q1.m](../HW7_Q1/HW7_Q1.m).
 - If you are using an older version of MATLAB (pre-R2020a), you may need alternative methods to combine multiple figures into a single PDF.
 
 ---
