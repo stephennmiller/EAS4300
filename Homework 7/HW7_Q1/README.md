@@ -9,6 +9,21 @@ This repository contains code and outputs for analyzing a **non-afterburning tur
 
 and plots them against the **compressor pressure ratio** $r_c$.
 
+flowchart TD
+    A[Inlet] --> B[Compressor]
+    B --> C[Combustor]
+    C --> D[Turbine]
+    D --> E[Nozzle]
+    E --> F[Exhaust]
+
+    D -- Drives --> B
+
+    subgraph Fuel Supply
+        G[Fuel]
+    end
+    G -.-> C
+
+
 ---
 
 ## Files
