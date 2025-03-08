@@ -57,7 +57,7 @@ Results are saved in `hw6_q3_results.csv`, and plots are saved as PDF files (`HW
 These are downloadable PDF files for high-quality viewing and printing.
 
 ## Files
-- `q3.m`: MATLAB script that performs the calculations and generates plots.
+- `HW6_Q3.m`: MATLAB script that performs the calculations and generates plots.
 - `hw6_q3_results.csv`: Output data table with 1000 rows, containing M_flight, Me_t, u, u_e, f, Specific_Thrust, TSFC, T04, A_exit_A_throat, eta_th, eta_p, and eta_0.
 - `HW6_Q3_Figure1.pdf`: Specific Thrust vs. Flight Mach Number.
 - `HW6_Q3_Figure2.pdf`: TSFC vs. Flight Mach Number.
