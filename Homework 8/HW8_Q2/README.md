@@ -56,17 +56,19 @@ The surface plot allows you to visualize how changes in both the fan and compres
 The analysis is based on several key thermodynamic equations. For example:
 
 **Inlet Total Temperature:**
-$$T_{0a} = T_a \left( 1 + \frac{k-1}{2} M_f^2 \right)$$
+$$
+T_{0a} = T_a \left( 1 + \frac{k-1}{2} M_f^2 \right)
+$$
 
 **Fuel-to-Air Ratio (Energy Balance):**
-$$F_b = \frac{T_{04_{\text{max}}} - T_3}{\left(\frac{\eta_b \, dhc}{C_{p2}}\right) - T_{04_{\text{max}}}}$$
+$$
+F_b = \frac{T_{04_{\text{max}}} - T_3}{\left(\frac{\eta_b \, dhc}{C_{p2}}\right) - T_{04_{\text{max}}}}
+$$
 
 **Overall Efficiency:**
-$$\eta_0 = \eta_{th} \times \eta_p$$
-
-For more details on creating diagrams and writing mathematical expressions in GitHub Markdown, check out:
-- [Creating Diagrams on GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
-- [Writing Mathematical Expressions on GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+$$
+\eta_0 = \eta_{th} \times \eta_p
+$$
 
 ## Customization
 
