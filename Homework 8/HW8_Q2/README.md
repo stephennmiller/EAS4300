@@ -11,7 +11,7 @@ This repository contains MATLAB code that performs a two-dimensional parametric 
   - Generates a surface plot of overall efficiency.
   
 - **HW8_Q2_data.csv**
-  Data file from script
+Data file from script
 
 - **README.md**  
   This file.
