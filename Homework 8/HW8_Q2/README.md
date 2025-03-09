@@ -67,21 +67,24 @@ $$\eta_0 = \eta_{th} \times \eta_p$$
 ## Customization
 
 You can adjust several parameters in the script:
+
 - **Engine and Flight Conditions:**  
   - Modify ambient conditions:  
     - Temperature: $T_a$  
     - Pressure: $P_a$  
     - Mach number: $M_f$  
     - Turbine inlet temperature: $T_{04_{\text{max}}}$  
+  - (Add a blank line for separation)
 
 - **Pressure Ratio Ranges:**  
   - Change the range and resolution of:  
     - Fan pressure ratio: $r_f$  
     - Compressor pressure ratio: $r_c$  
-  - Adjust the vectors `rfVec` and `rcVec`.
+  - Adjust the vectors `rfVec` and `rcVec`.  
+  - (Add a blank line for separation)
 
 - **Efficiency Parameters:**  
-  Update the efficiency values (e.g., diffuser, compressor, turbine) as needed.
+  - Update efficiency values (e.g., diffuser, compressor, turbine) as needed.
 
 ## Acknowledgments
 
