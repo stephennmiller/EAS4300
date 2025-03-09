@@ -69,11 +69,9 @@ $$\eta_0 = \eta_{th} \times \eta_p$$
 You can adjust several parameters in the script:
 - **Engine and Flight Conditions:**  
   Modify ambient conditions (temperature $T_a$, pressure $P_a$, Mach number $M_f$, and turbine inlet temperature $T_{04_{\text{max}}}$.  
-
-- **Pressure Ratio Ranges:**  
+\- **Pressure Ratio Ranges:**  
   Change the range and resolution of $r_f$ and $r_c$ by adjusting the vectors `rfVec` and `rcVec`.  
-
-- **Efficiency Parameters:**  
+\- **Efficiency Parameters:**  
   Update the efficiency values (e.g., diffuser, compressor, turbine) as needed.
 
 ## Acknowledgments
