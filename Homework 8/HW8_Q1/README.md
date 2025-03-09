@@ -68,14 +68,14 @@ The MATLAB code in this project includes:
 
 ```mermaid
 flowchart TD
-    A[Start: Set Parameters] --> B[Calculate Inlet Conditions]
-    B --> C[Compute Compressor and Fan Performance]
-    C --> D[Calculate Burner Fuel-to-Air Ratio]
-    D --> E[Determine Turbine Work Extraction]
-    E --> F[Expand Through Nozzles]
-    F --> G[Compute Performance Metrics \(Thrust, TSFC, Efficiencies\)]
-    G --> H[Export Data and Generate Plots]
-    H --> I[End]
+    A(START) --> B(Calculate Inlet Conditions)
+    B --> C(Compressor and Fan Performance)
+    C --> D(Burner Fuel-to-Air Ratio)
+    D --> E(Turbine Work Extraction)
+    E --> F(Expand Through Nozzles)
+    F --> G(Compute Performance Metrics - Thrust, TSFC, Efficiencies)
+    G --> H(Export Data and Generate Plots)
+    H --> I(END)
 ```
 ### Key Equations
 
