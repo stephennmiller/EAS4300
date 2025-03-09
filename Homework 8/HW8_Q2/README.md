@@ -61,9 +61,7 @@ T_{0a} = T_a \left( 1 + \frac{k-1}{2} M_f^2 \right)
 $$
 
 **Fuel-to-Air Ratio (Energy Balance):**
-$$
-F_b = \frac{T_{04_{\text{max}}} - T_3}{\left(\frac{\eta_b \, dhc}{C_{p2}}\right) - T_{04_{\text{max}}}}
-$$
+$$F_b = \frac{T_{04_{\text{max}}} - T_3}{\left(\frac{\eta_b \, dhc}{C_{p2}}\right) - T_{04_{\text{max}}}}$$
 
 **Overall Efficiency:**
 $$
