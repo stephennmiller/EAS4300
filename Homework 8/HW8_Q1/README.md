@@ -73,7 +73,7 @@ flowchart TD
     C --> D[Calculate Burner Fuel-to-Air Ratio]
     D --> E[Determine Turbine Work Extraction]
     E --> F[Expand Through Nozzles]
-    F --> G[Compute Performance Metrics (Thrust, TSFC, Efficiencies)]
+    F --> G[Compute Performance Metrics \(Thrust, TSFC, Efficiencies\)]
     G --> H[Export Data and Generate Plots]
     H --> I[End]
 ```
