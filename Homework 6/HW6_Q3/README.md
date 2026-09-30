@@ -21,53 +21,47 @@ The script calculates and plots the following:
 - Efficiencies (overall, thermal, propulsive) vs. Flight Mach Number
 - Fuel-to-Air Ratio (f) vs. Flight Mach Number
 
-Results are saved in `hw6_q3_results.csv`, and plots are saved as PDF files (`HW6_Q3_Figure1.pdf` to `HW6_Q3_Figure6.pdf`).
+Results are saved in `hw6_q3_results.csv`. The published report `HW6_Q3.pdf` (MATLAB `publish`) contains the code, output, and all six plots.
 
 ## Methodology
 1. **Setup**: Define constants and ambient conditions at 10,000 meters. Use `linspace` to create an array of 1000 Mach numbers from 1 to 6.
 2. **Calculations**:
    - Compute stagnation pressure and temperature at the inlet.
-   - Solve for the exit Mach number using symbolic math (`vpasolve`).
+   - Compute the exit Mach number for ideal expansion back to ambient pressure (closed-form isentropic relation).
    - Calculate the area ratio (A_exit/A_throat) based on the exit Mach number.
-   - Determine the fuel-to-air ratio, constrained by the stoichiometric limit (f_st = 0.06) and maximum combustor temperature (2600 K).
+   - Determine the fuel-to-air ratio from the burner energy balance, `Cp_air*T0a + f*Δh_c = (1+f)*Cp*T04`, using the inlet Cp (k = 1.4) for the incoming air and the combustor Cp (k = 1.33) for the products. Where reaching 2600 K would need more than the stoichiometric limit, f is held at f_st = 0.06 and T04 is solved from the same balance.
    - Compute exit temperature, exit velocity, specific thrust, TSFC, and efficiencies (thermal, propulsive, overall).
 3. **Output**:
    - Save results to `hw6_q3_results.csv`.
-   - Generate six plots (Figures 1–6) with grid lines for readability and save them as PDF files.
+   - Generate six plots (Figures 1–6) with grid lines for readability; each appears under its own section in the published PDF.
 
 ## Key Findings
-- **Specific Thrust**: Peaks around M=2.67 at approximately 1104 m/s and decreases to 499 m/s at M=6, reflecting the ramjet’s optimal operating range.
-- **TSFC**: Decreases from 0.000103 kg/N·s at M=1 to 0.0000445 kg/N·s at M=6, indicating improved fuel efficiency at higher Mach numbers.
-- **Combustor Exit Temperature (T04)**: Increases from 2357 K at M=1 to 2600 K (the maximum limit) around M=2.62 and remains constant thereafter due to the stoichiometric constraint.
-- **Area Ratio (A_exit/A_throat)**: Increases exponentially from 1.0003 at M=1 to 65.68 at M=6, as expected for a ramjet to accommodate expanding exhaust gases at higher speeds.
+- **Specific Thrust**: Rises from 641 m/s at M=1 to a peak of about 1103 m/s at M≈2.93, where the engine first reaches the 2600 K limit, then falls to 515 m/s at M=6.
+- **TSFC**: Falls from 9.36e-5 kg/N·s at M=1 to a minimum of 5.28e-5 kg/N·s near M=3.94, then rises slightly to 5.67e-5 kg/N·s at M=6 as thrust drops faster than fuel flow.
+- **Combustor Exit Temperature (T04)**: Rises from 2324 K at M=1 (fuel-limited at f_st) to the 2600 K maximum at M≈2.93, and stays there for higher Mach numbers.
+- **Area Ratio (A_exit/A_throat)**: Increases from 1.0003 at M=1 to 65.68 at M=6, as the nozzle expands a much higher stagnation pressure back to ambient.
 - **Efficiencies**:
-  - Overall efficiency (\eta_0) increases from 0.135 at M=1 to 0.469 at M=6.
-  - Thermal efficiency (\eta_th) increases from 0.263 to 0.505.
-  - Propulsive efficiency (\eta_p) increases from 0.514 to 0.930, showing better energy conversion at higher speeds.
-- **Fuel-to-Air Ratio (f)**: Decreases from 0.0675 at M=1 to 0.0223 at M=6, constrained by the stoichiometric limit (f_st = 0.06) at lower Mach numbers.
+  - Overall efficiency (η_0) increases from 0.074 at M=1 to 0.737 at M=6.
+  - Thermal efficiency (η_th) increases from 0.144 to 0.782, staying below the ideal Brayton limit (1 − T_a/T_0a = 0.878 at M=6).
+  - Propulsive efficiency (η_p) increases from 0.516 to 0.942 as the exhaust velocity approaches the flight velocity.
+- **Fuel-to-Air Ratio (f)**: Held at the stoichiometric limit f_st = 0.06 from M=1 to M≈2.93, then decreases to 0.0292 at M=6 as ram heating does more of the work of reaching 2600 K.
 
 ## Plots
-- [Specific Thrust vs. Flight Mach Number](HW6_Q3_Figure1.pdf)
-- [TSFC vs. Flight Mach Number](HW6_Q3_Figure2.pdf)
-- [Combustor Exit Temperature vs. Flight Mach Number](HW6_Q3_Figure3.pdf)
-- [Area Ratio vs. Flight Mach Number](HW6_Q3_Figure4.pdf)
-- [Efficiencies vs. Flight Mach Number](HW6_Q3_Figure5.pdf)
-- [Fuel-to-Air Ratio vs. Flight Mach Number](HW6_Q3_Figure6.pdf)
-
-These are downloadable PDF files for high-quality viewing and printing.
+All six plots are in the published report, [HW6_Q3.pdf](HW6_Q3.pdf), each under its own heading:
+1. Specific Thrust vs. Flight Mach Number
+2. TSFC vs. Flight Mach Number
+3. Combustor Exit Temperature vs. Flight Mach Number
+4. Nozzle Area Ratio vs. Flight Mach Number
+5. Efficiencies vs. Flight Mach Number
+6. Fuel-to-Air Ratio vs. Flight Mach Number
 
 ## Files
 - `HW6_Q3.m`: MATLAB script that performs the calculations and generates plots.
 - `hw6_q3_results.csv`: Output data table with 1000 rows, containing M_flight, Me_t, u, u_e, f, Specific_Thrust, TSFC, T04, A_exit_A_throat, eta_th, eta_p, and eta_0.
-- `HW6_Q3_Figure1.pdf`: Specific Thrust vs. Flight Mach Number.
-- `HW6_Q3_Figure2.pdf`: TSFC vs. Flight Mach Number.
-- `HW6_Q3_Figure3.pdf`: Combustor Exit Temperature vs. Flight Mach Number.
-- `HW6_Q3_Figure4.pdf`: Area Ratio vs. Flight Mach Number.
-- `HW6_Q3_Figure5.pdf`: Efficiencies vs. Flight Mach Number.
-- `HW6_Q3_Figure6.pdf`: Fuel-to-Air Ratio vs. Flight Mach Number.
+- `HW6_Q3.pdf`: Published report (code, output, and Figures 1–6).
 
 ## Notes
 - The script includes clearing commands (`clear all; close all; clc;`) to ensure a fresh start for each run.
 - Grid lines are added to all plots for better readability.
-- The `delta = 1000` setting provides smooth plots and detailed data, but increases computation time slightly compared to `delta = 10`.
-- Plots are saved as PDFs for high-quality output, downloadable from the links above.
+- The `delta = 1000` setting provides smooth plots and detailed data; with the closed-form relations the script runs in well under a second.
+- To regenerate the report, run `publish('HW6_Q3.m', 'format', 'pdf', 'outputDir', pwd);` from this folder. This also rewrites the CSV.
