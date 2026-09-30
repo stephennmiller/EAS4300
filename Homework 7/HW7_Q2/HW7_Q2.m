@@ -231,7 +231,7 @@ plot(rc, eta_th_ab, '--','Color','b','LineWidth',1.5,'DisplayName','\eta_{th} AB
 plot(rc, eta_0_ab,  '--','Color','k','LineWidth',1.5,'DisplayName','\eta_{o} AB');
 plot(rc, eta_p_ab,  '--','Color','r','LineWidth',1.5,'DisplayName','\eta_{p} AB');
 hold off
-legend('Location','northwest','FontSize',9);
+legend('Location','eastoutside','FontSize',9);
 xlabel('r_c [dim]', 'FontWeight','bold');
 ylabel('Efficiency', 'FontWeight','bold');
 title('Efficiencies vs. r_c');
